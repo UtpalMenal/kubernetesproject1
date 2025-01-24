@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: happyapp
-        image: sksamailali/springboot:13
+        image: utpalmenal/happyapp:13
         ports:
         - containerPort: 8080
