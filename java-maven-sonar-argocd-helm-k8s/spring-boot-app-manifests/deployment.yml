@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: happyapp
-        image: utpalmenal/happyapp:4
+        image: utpalmenal/happyapp:replaceImageTag
         ports:
         - containerPort: 8080
