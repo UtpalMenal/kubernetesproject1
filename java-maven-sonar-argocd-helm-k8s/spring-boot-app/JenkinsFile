@@ -6,6 +6,11 @@ pipeline {
     }
   }
   stages {
+    stage('Cleanup Workspace') {
+      steps {
+        deleteDir() // 🔄 Cleans up the Jenkins workspace
+      }
+    }
     stage('Checkout') {
       steps {
         sh 'echo passed'
