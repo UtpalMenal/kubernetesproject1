@@ -16,6 +16,12 @@ public class StartApplication {
         model.addAttribute("msg", "This application is deployed on to Kubernetes using Argo CD");
         return "index";
     }
+    @GetMapping("/hello")
+    @ResponseBody
+    public String sayHellos() {
+        return "Hello, World!";
+        // comment
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(StartApplication.class, args);
